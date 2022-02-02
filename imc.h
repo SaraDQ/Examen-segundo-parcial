@@ -2,6 +2,9 @@
 #define IMC_H
 
 #include <QMainWindow>
+#include <QPainter>
+#include <QFileDialog>
+#include <QMessageBox>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class IMC; }
@@ -17,5 +20,7 @@ public:
 
 private:
     Ui::IMC *ui;
+    QPixmap lienzo;
+    void dibujarIMC();
 };
 #endif // IMC_H
