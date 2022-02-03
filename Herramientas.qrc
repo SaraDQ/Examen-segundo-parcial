@@ -1,5 +1,8 @@
 <RCC>
     <qresource prefix="/">
         <file>Iconos1/perdida-de-peso.png</file>
+        <file>Iconos1/peso.png</file>
+        <file>ExamenPOO_en.qm</file>
+        <file>ExamenPOO_tu.qm</file>
     </qresource>
 </RCC>

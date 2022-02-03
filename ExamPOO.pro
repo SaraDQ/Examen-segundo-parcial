@@ -9,14 +9,18 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    impresion.cpp \
     main.cpp \
     imc.cpp
 
 HEADERS += \
-    imc.h
+    imc.h \
+    impresion.h
 
 FORMS += \
     imc.ui
+TRANSLATIONS = ExamenPOO_en.ts \
+                     ExamenPOO_tu.ts
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -25,3 +29,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     Herramientas.qrc
+
+DISTFILES += \
+    ExamenPOO_en.qm

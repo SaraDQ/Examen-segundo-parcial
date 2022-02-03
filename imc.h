@@ -6,6 +6,8 @@
 #include <QFileDialog>
 #include <QMessageBox>
 
+#include "impresion.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class IMC; }
 QT_END_NAMESPACE
@@ -18,9 +20,20 @@ public:
     IMC(QWidget *parent = nullptr);
     ~IMC();
 
+
+
+
+private slots:
+    void on_btnCalcular_clicked();
+
+    void on_btnGuardar_clicked();
+
 private:
     Ui::IMC *ui;
     QPixmap lienzo;
+
     void dibujarIMC();
+    void linea(double icm);
 };
+
 #endif // IMC_H
